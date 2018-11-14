@@ -1,0 +1,38 @@
+{
+  "name": "@rgba-image/line",
+  "version": "0.1.0",
+  "description": "Plot a line onto an ImageData",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && mocha ./dist/test",
+    "coverage": "tsc && nyc --reporter=html --reporter=text mocha ./dist/test"
+  },
+  "nyc": {
+    "exclude": [
+      "./dist/test"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgba-image/line.git"
+  },
+  "keywords": [],
+  "author": "Nik Coughlin <nrkn.com@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rgba-image/line/issues"
+  },
+  "homepage": "https://github.com/rgba-image/line#readme",
+  "dependencies": {
+    "@rgba-image/color": "^0.1.0",
+    "@rgba-image/common": "^0.1.12"
+  },
+  "devDependencies": {
+    "@rgba-image/create-image": "^0.1.1",
+    "@rgba-image/png": "^0.1.0",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.1"
+  }
+}
